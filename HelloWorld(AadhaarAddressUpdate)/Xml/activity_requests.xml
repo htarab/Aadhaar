@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RequestsActivity"
+    android:background="@color/MyColorMain">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_requests"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:padding="20dp"
+        android:paddingTop="0dp"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

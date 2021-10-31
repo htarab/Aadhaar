@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity"
+    android:background="@color/MyColorMain">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/title_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/title_register"
+            android:layout_marginTop="100dp"
+            android:hint="Name"
+            android:textColor="@color/MyColorMain"
+            android:background="@drawable/background_text"
+            android:padding="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="150dp"
+            android:layout_below="@id/user_name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="-5dp"
+                android:padding="8dp"
+                android:visibility="visible"/>
+
+            <EditText
+                android:id="@+id/user_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:hint="Phone No."
+                android:textColor="@color/MyColorMain"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/background_text"
+                android:padding="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:visibility="visible"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/user_aadhaar_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/background_text"
+            android:hint="Aadhaar No."
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/MyColorMain"
+            android:visibility="visible"
+            android:inputType="numberPassword"/>
+
+        <Button
+            android:id="@+id/btn_send_otp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Send OTP"
+            android:background="@drawable/background_button"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="200dp"
+            android:textColor="@color/MyColorMain"
+            android:layout_below="@+id/user_aadhaar_no"
+            android:layout_marginTop="100dp"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="150dp"
+            android:layout_centerHorizontal="true"
+            android:hint="OTP"
+            android:textColor="@color/MyColorMain"
+            android:background="@drawable/background_text"
+            android:padding="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:inputType="number"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Confirm"
+            android:background="@drawable/background_button"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="200dp"
+            android:textColor="@color/MyColorMain"
+            android:layout_below="@+id/otp"
+            android:layout_marginTop="80dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
